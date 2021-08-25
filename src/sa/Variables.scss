@@ -1,0 +1,64 @@
+$moderate-violet: #733fc8;
+$grayish-blue: #48556c;
+$blackish-blue: #18202d;
+$light-gray: #cfcfcf;
+$light-grayish-blue: #edf2f8;
+$stroke-image: #b28be8;
+
+@mixin cuadro {
+  section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    align-self: center;
+    justify-self: center;
+    img {
+      border-radius: 50%;
+      border: rgb(159, 79, 235) solid 2px;
+    }
+  }
+  .nombre {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 1.5rem;
+  }
+  .sub {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    font-size: 1rem;
+    color: $light-gray;
+  }
+  .text {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    padding-left: 37px;
+    padding-right: 37px;
+    text-align: left;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: bold;
+  }
+  .text2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    font-family: 'Barlow Semi Condensed';
+    padding-left: 37px;
+    padding-right: 37px;
+    color: $light-gray;
+  }
+}

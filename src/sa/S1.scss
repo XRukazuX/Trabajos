@@ -1,0 +1,142 @@
+@import './Variables.scss';
+@import './mobile.scss';
+@media (min-width: 600px) {
+  body {
+    background-color: $light-grayish-blue;
+    margin: 0;
+    padding: 0;
+  }
+  .caja {
+    width: 75%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 50%);
+    gap: 2%;
+    margin: 0 auto;
+    margin-top: 10%;
+    .c1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      background-color: $moderate-violet;
+      border-radius: 10px;
+      color: white;
+      display: grid;
+      grid-template-rows: repeat(8, 11.7%);
+      grid-template-columns: repeat(4, 24.5%);
+      gap: 2px;
+      @include cuadro;
+      background-image: url('../img/bg-pattern-quotation.png');
+      background-repeat: no-repeat;
+      background-position: right 100px top;
+    }
+    .c2 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      background-color: $grayish-blue;
+      border-radius: 10px;
+      display: grid;
+      grid-template-rows: repeat(8, 11.7%);
+      grid-template-columns: repeat(4, 24.5%);
+      gap: 2px;
+      color: white;
+      @include cuadro;
+    }
+    .c3 {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      background-color: white;
+      border-radius: 10px;
+      display: grid;
+      grid-template-rows: repeat(8, 11.7%);
+      grid-template-columns: repeat(4, 24.5%);
+      gap: 2px;
+      color: black;
+      section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        align-self: center;
+        justify-self: center;
+        img {
+          border-radius: 50%;
+          border: rgb(159, 79, 235) solid 2px;
+        }
+      }
+      .nombre {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 1.5rem;
+      }
+      .sub {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-size: 1rem;
+        color: $light-gray;
+      }
+      .text {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        padding-left: 37px;
+        padding-right: 37px;
+        text-align: left;
+        font-family: 'Barlow Semi Condensed';
+        font-weight: bold;
+      }
+      .text2 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 9;
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+        font-family: 'Barlow Semi Condensed';
+        padding-left: 37px;
+        padding-right: 37px;
+        color: $light-gray;
+      }
+    }
+    .c4 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: white;
+      border-radius: 10px;
+      display: grid;
+      grid-template-rows: repeat(8, 11.7%);
+      grid-template-columns: repeat(4, 24.5%);
+      gap: 2px;
+      color: black;
+      @include cuadro;
+    }
+    .c5 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: $blackish-blue;
+      border-radius: 10px;
+      display: grid;
+      grid-template-rows: repeat(8, 11.7%);
+      grid-template-columns: repeat(4, 24.5%);
+      gap: 2px;
+      color: white;
+      @include cuadro;
+    }
+  }
+}
